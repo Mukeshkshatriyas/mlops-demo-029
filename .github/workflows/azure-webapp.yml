@@ -17,6 +17,6 @@ jobs:
     - name: Deploy to Azure WebApp (Docker Hub image)
       uses: azure/webapps-deploy@v2
       with:
-        app-name: mukeshwebapp18 # exact Azure WebApp name
+        app-name: mukeshwebapp18  # exact Azure WebApp name
         publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE }}
         images: 'mukeshkshatriyas/mlops-api-repo-dh:latest'
